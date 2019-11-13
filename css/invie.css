@@ -1,0 +1,272 @@
+body{
+    font-family: 'Allerta', sans-serif;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    background: #273c75;
+    color: white;
+}
+
+th{
+    padding: 10px 20px;
+    text-align: left;
+}
+
+td{
+    padding: 20px;
+}
+
+table, td, th{
+    border: 1px solid #273c75;
+    border-collapse: collapse;
+}
+
+input, textarea{
+    outline: 0;
+}
+
+input:focus, textarea:focus{/* pseudo clase */
+    background: lightgray;
+}
+
+.background{
+    background-image:url('../images/background.png');
+    background-size: cover; /* expandir imagen */
+}
+
+.contenedor{
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.button{
+    border-radius: 12px;
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    padding: 7px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    background: linear-gradient(to left, #fe344e, #ff7250);/* para degradado */
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+    margin-top: 70px;
+}
+
+.titulo span{
+    text-decoration: underline;
+}
+
+.title-a{
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.title-b{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.guitarras{
+    color: #1f313C;
+    margin-bottom: 60px;
+}
+
+.guitarras h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+.portada{
+    color: white;
+    padding: 20px;
+    height: 500px;
+}
+
+.portada button{
+    margin-bottom: 70px;
+}
+
+.menu{
+    font-size: 24px;
+    display: inline-block;
+    position: absolute; /* it's positioned relative to its first positioned(no static) ancestor element */
+    right: 0;
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu li:before{ /*Esto es un pseudoemento °[*¨´| before: que coloque antes de */
+    content: '·';
+    font-size: 50px;
+    line-height: 20px; /* alto de linea */
+    color: white;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.logotipo{
+    display: inline-block;
+    margin-left: 0;
+}
+
+.guitarra{
+    /* overflow: hidden;/* eliminar desborde la las imagenes */
+    border: 1px solid #1f313C;
+    margin: 10px 10px 40px 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.guitarra ol{
+    padding: 0;
+}
+
+.guitarra.b{
+    height: 190px;
+}
+
+.right{
+    float: right;
+    position: relative;
+    top: -127px;
+}
+
+.left{
+    float: left;
+    position: relative;
+}
+
+.cont-guitarra-a{
+    padding-left: 20px;
+}
+
+.cont-guitarra-b{
+    margin-left: 370px;
+    position: relative;
+    bottom: 50px;
+}
+
+header{
+    position: relative;
+}
+
+.footer{
+    background: #273c75;
+    padding: 50px 10px;
+}
+
+.contacto{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacto img{
+    display: block;
+}
+
+.contacto strong{
+    display: block;
+}
+
+.contacto a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 10px 10px 0; 
+}
+
+.footer .contenedor{ /* Colocar estilos a contedor dentro de footer*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario{
+    display: flex;
+    width: 400px;
+    color: white;
+}
+
+.col1, .col2{/* para darle estilos al mismo tiempo */
+    display: flex;
+    flex-direction: column;
+}
+
+.col1{
+    margin-right: 15px;
+}
+
+.col2{
+    align-items: flex-start;
+}
+
+.col2 .button{
+    margin-top: 15px;
+}
+
+.intereses label{
+    font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses{
+    margin-bottom: 10px;
+}
+
+.sexo{
+    margin-top: 10px;
+}
+
+table{
+     margin: 50px 0;; /* superior inferior 50px derecha e izquierda 0; */
+}
+
+/* the position property specifies the type of positioning method used for an element:
+
+static: default value
+
+absolute: it's positioned relative to its first positioned(no static) ancestor element
+
+fixed: is positioned relative to the browser window
+
+relative: is positioned relative to its normal pasition,
+so left:20; add 20 pixels to element's left position
+
+stiky: the element is positioned based on the user's scroll position 
+----------------------------
+display:flex; agrupa elementos uno al lado del otro
+justify-conten:flex-start alinear elementos principio 
+-end final
+-center
+-around distribuir equitativamente 
+space-between
+
+flex-wrap:nowrap; |default ningun elemento hijo pase a otra linea responsive
+
+flex-wrap:wrap; lo contrario
+
+flex-direction: row; por defecto en fila 
+
+flex-direction: colum; en columna
+
+aling-items: center; para centrar contenino
+
+
+*/
